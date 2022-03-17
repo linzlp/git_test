@@ -1,0 +1,23 @@
+初始化仓库:  git init
+
+设置全局用户名和邮箱: git config --global user.name "Your Name"
+		  git config --global user.email "email@example.com"
+
+生成公钥和私钥： ssh-keygen -t rsa -C "youremail@example.com"
+
+新建一个本地分支: git checkout -b lee
+
+查看所有的分支: git branch -a
+
+关联远程仓库: git remote add origin git@github.com:magua1025/gitHome.git
+
+push推送本地分支时,建立追踪关系: git push -u <远程主机名> <本地分支名>
+
+增加已追踪的文件的修改删除及未追踪的文件提交到暂存区:  git add -A .
+
+查看工作区状态: git status 
+
+将暂存区里的改动给提交到本地的版本库，-m 是注释信息:  git commit -m 'message'
+
+
+
