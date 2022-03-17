@@ -1,0 +1,205 @@
+{
+  "uid" : "f119b38c11f939ad",
+  "name" : "用户名已注册",
+  "fullName" : "testcases.test_my_interface01.test_register.TestRegister#test_register",
+  "historyId" : "089aab52f262d722a89e2708258e3def",
+  "time" : {
+    "start" : 1646221621947,
+    "stop" : 1646221621983,
+    "duration" : 36
+  },
+  "description" : "京东小程序入口注册接口",
+  "descriptionHtml" : "<p>京东小程序入口注册接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 8,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "connect_db",
+    "time" : {
+      "start" : 1646221621943,
+      "stop" : 1646221621946,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "京东小程序入口注册接口",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "73a2071b18ecbf64",
+      "name" : "接口路径",
+      "source" : "73a2071b18ecbf64.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "8785336d7e207091",
+      "name" : "接口参数",
+      "source" : "8785336d7e207091.attach",
+      "type" : "text/plain",
+      "size" : 116
+    }, {
+      "uid" : "a882c1a5dfa59ad3",
+      "name" : "响应结果",
+      "source" : "a882c1a5dfa59ad3.attach",
+      "type" : "text/plain",
+      "size" : 43
+    }, {
+      "uid" : "7a474d1e0d9b532c",
+      "name" : "log",
+      "source" : "7a474d1e0d9b532c.txt",
+      "type" : "text/plain",
+      "size" : 312
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "connect_db::0",
+    "time" : {
+      "start" : 1646221621984,
+      "stop" : 1646221621984,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "注册模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-364LE5K"
+  }, {
+    "name" : "thread",
+    "value" : "3476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x0000026CA1F59AC8>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "ce9d217c6551d1ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646199361109,
+        "stop" : 1646199361139,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "1fbf690b430a5c72",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646199309656,
+        "stop" : 1646199309673,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "1ca5a7b7162435c6",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646199217365,
+        "stop" : 1646199217384,
+        "duration" : 19
+      }
+    }, {
+      "uid" : "d3fcb0b92a603276",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646199159217,
+        "stop" : 1646199159235,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "6d2e879f73122571",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646198940074,
+        "stop" : 1646198940092,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "5f59551b0663458c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646198591152,
+        "stop" : 1646198591182,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "8a764cb739878ae2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646198234059,
+        "stop" : 1646198234096,
+        "duration" : 37
+      }
+    }, {
+      "uid" : "ecf112560a3ae753",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '../test_excel_data03/cases.xlsx'",
+      "time" : {
+        "start" : 1646198020085,
+        "stop" : 1646198020098,
+        "duration" : 13
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f119b38c11f939ad.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x0000026CA1F59AC8>" ]
+}

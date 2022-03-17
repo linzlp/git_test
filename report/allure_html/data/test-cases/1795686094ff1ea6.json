@@ -1,0 +1,104 @@
+{
+  "uid" : "1795686094ff1ea6",
+  "name" : "测试密码输入错误的场景",
+  "fullName" : "testcases.test_my_interface01.test_login.TestLogin#test_login",
+  "historyId" : "6a1b7213a76d4bf7465f276e4e463fdc",
+  "time" : {
+    "start" : 1646198233719,
+    "stop" : 1646198233748,
+    "duration" : 29
+  },
+  "description" : "京东小程序入口登入接口",
+  "descriptionHtml" : "<p>京东小程序入口登入接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "京东小程序入口登入接口",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "10a8fb14e5d968f",
+      "name" : "接口路径",
+      "source" : "10a8fb14e5d968f.attach",
+      "type" : "text/plain",
+      "size" : 32
+    }, {
+      "uid" : "cfe44aa71652a129",
+      "name" : "接口参数",
+      "source" : "cfe44aa71652a129.attach",
+      "type" : "text/plain",
+      "size" : 47
+    }, {
+      "uid" : "b413afec102b8da5",
+      "name" : "响应结果",
+      "source" : "b413afec102b8da5.attach",
+      "type" : "text/plain",
+      "size" : 49
+    }, {
+      "uid" : "9edc272cb060a766",
+      "name" : "log",
+      "source" : "9edc272cb060a766.txt",
+      "type" : "text/plain",
+      "size" : 326
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登入模块"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-364LE5K"
+  }, {
+    "name" : "thread",
+    "value" : "11040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x0000010623BD67F0>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1795686094ff1ea6.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x0000010623BD67F0>" ]
+}

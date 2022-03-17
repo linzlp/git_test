@@ -1,0 +1,134 @@
+{
+  "uid" : "66163d72dc76b612",
+  "name" : "手机号码为空",
+  "fullName" : "testcases.test_my_interface01.test_register.TestRegister#test_register",
+  "historyId" : "a66a1294c3efdc4645cb1c6bf3c6092a",
+  "time" : {
+    "start" : 1646198234021,
+    "stop" : 1646198234052,
+    "duration" : 31
+  },
+  "description" : "京东小程序入口注册接口",
+  "descriptionHtml" : "<p>京东小程序入口注册接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "connect_db",
+    "time" : {
+      "start" : 1646198234018,
+      "stop" : 1646198234021,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "京东小程序入口注册接口",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a5cf465e2b483e35",
+      "name" : "接口路径",
+      "source" : "a5cf465e2b483e35.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "c583d2cf48bbe499",
+      "name" : "接口参数",
+      "source" : "c583d2cf48bbe499.attach",
+      "type" : "text/plain",
+      "size" : 104
+    }, {
+      "uid" : "1f7e9e109ce62b2e",
+      "name" : "响应结果",
+      "source" : "1f7e9e109ce62b2e.attach",
+      "type" : "text/plain",
+      "size" : 46
+    }, {
+      "uid" : "4b96e79ed3916219",
+      "name" : "log",
+      "source" : "4b96e79ed3916219.txt",
+      "type" : "text/plain",
+      "size" : 312
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "connect_db::0",
+    "time" : {
+      "start" : 1646198234053,
+      "stop" : 1646198234053,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册模块"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-364LE5K"
+  }, {
+    "name" : "thread",
+    "value" : "11040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x000001062458FD30>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "66163d72dc76b612.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x000001062458FD30>" ]
+}

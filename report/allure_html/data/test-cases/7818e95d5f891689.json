@@ -1,0 +1,160 @@
+{
+  "uid" : "7818e95d5f891689",
+  "name" : "typeId类型格式不正确",
+  "fullName" : "testcases.test_business_token_login02.test_login03.TestLogin#test_login",
+  "historyId" : "f3111e0f4c4dac4ba715f25305006a92",
+  "time" : {
+    "start" : 1646221621367,
+    "stop" : 1646221621402,
+    "duration" : 35
+  },
+  "description" : "商品登录模块测试用例",
+  "descriptionHtml" : "<p>商品登录模块测试用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "connect_db",
+    "time" : {
+      "start" : 1646221621364,
+      "stop" : 1646221621367,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "商品登录模块测试用例",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f1d5a8ecbe030c84",
+      "name" : "接口路径",
+      "source" : "f1d5a8ecbe030c84.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "65dd721ab81a2fa4",
+      "name" : "请求参数",
+      "source" : "65dd721ab81a2fa4.attach",
+      "type" : "text/plain",
+      "size" : 64
+    }, {
+      "uid" : "c12624d043319fa1",
+      "name" : "响应结果",
+      "source" : "c12624d043319fa1.attach",
+      "type" : "text/plain",
+      "size" : 52
+    }, {
+      "uid" : "ffcb11b300cee586",
+      "name" : "log",
+      "source" : "ffcb11b300cee586.txt",
+      "type" : "text/plain",
+      "size" : 324
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "connect_db::0",
+    "time" : {
+      "start" : 1646221621403,
+      "stop" : 1646221621403,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "商品登录模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_business_token_login02"
+  }, {
+    "name" : "suite",
+    "value" : "test_login03"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-364LE5K"
+  }, {
+    "name" : "thread",
+    "value" : "3476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_business_token_login02.test_login03"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x0000026CA1F0A198>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "fb8b47d25bb5a823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646221591157,
+        "stop" : 1646221591191,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "ff1394be6d822e05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646221542756,
+        "stop" : 1646221542790,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "b3561cc834923b34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646221486476,
+        "stop" : 1646221486513,
+        "duration" : 37
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7818e95d5f891689.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x0000026CA1F0A198>" ]
+}

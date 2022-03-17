@@ -1,0 +1,214 @@
+{
+  "uid" : "b9c31b318580714f",
+  "name" : "密码为空",
+  "fullName" : "testcases.test_my_interface01.test_register.TestRegister#test_register",
+  "historyId" : "c3fdef1daa8df2bf4fe755a89ee673d5",
+  "time" : {
+    "start" : 1646221621781,
+    "stop" : 1646221621814,
+    "duration" : 33
+  },
+  "description" : "京东小程序入口注册接口",
+  "descriptionHtml" : "<p>京东小程序入口注册接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 9,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "connect_db",
+    "time" : {
+      "start" : 1646221621778,
+      "stop" : 1646221621781,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "京东小程序入口注册接口",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2121d257088e19d7",
+      "name" : "接口路径",
+      "source" : "2121d257088e19d7.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "955b4585a53c8626",
+      "name" : "接口参数",
+      "source" : "955b4585a53c8626.attach",
+      "type" : "text/plain",
+      "size" : 108
+    }, {
+      "uid" : "4642e1b91ef7c3ad",
+      "name" : "响应结果",
+      "source" : "4642e1b91ef7c3ad.attach",
+      "type" : "text/plain",
+      "size" : 43
+    }, {
+      "uid" : "496837578d76678f",
+      "name" : "log",
+      "source" : "496837578d76678f.txt",
+      "type" : "text/plain",
+      "size" : 306
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "connect_db::0",
+    "time" : {
+      "start" : 1646221621815,
+      "stop" : 1646221621815,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "注册模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-364LE5K"
+  }, {
+    "name" : "thread",
+    "value" : "3476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x0000026CA1F59470>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "94bf02c0dff8b02f",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015522916A90>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+      "time" : {
+        "start" : 1646221556251,
+        "stop" : 1646221558281,
+        "duration" : 2030
+      }
+    }, {
+      "uid" : "e8ebf17b2fe7e616",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646199360963,
+        "stop" : 1646199360996,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "ade30fd3ea11bb6",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646199309344,
+        "stop" : 1646199309357,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "2b058e0da7259ee4",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646199217060,
+        "stop" : 1646199217075,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "21abe0ef7f51a3fc",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646199158866,
+        "stop" : 1646199158880,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "328d8152a254c761",
+      "status" : "broken",
+      "statusDetails" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+      "time" : {
+        "start" : 1646198939773,
+        "stop" : 1646198939787,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "226cf2ce5f6d2927",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646198591017,
+        "stop" : 1646198591045,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "59eac58660ff7553",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646198233922,
+        "stop" : 1646198233949,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "a3488f39503bb61a",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '../test_excel_data03/cases.xlsx'",
+      "time" : {
+        "start" : 1646198019813,
+        "stop" : 1646198019819,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b9c31b318580714f.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x0000026CA1F59470>" ]
+}

@@ -1,0 +1,138 @@
+{
+  "uid" : "9b4a583f20974e42",
+  "name" : "手机号码为空",
+  "fullName" : "testcases.test_my_interface01.test_register.TestRegister#test_register",
+  "historyId" : "a66a1294c3efdc4645cb1c6bf3c6092a",
+  "time" : {
+    "start" : 1646199159102,
+    "stop" : 1646199159142,
+    "duration" : 40
+  },
+  "description" : "京东小程序入口注册接口",
+  "descriptionHtml" : "<p>京东小程序入口注册接口</p>\n",
+  "status" : "broken",
+  "statusMessage" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+  "statusTrace" : "self = <autotest.testcases.test_my_interface01.test_register.TestRegister object at 0x000002D670097908>\ncase = <comms.excel_utils.CaseData object at 0x000002D6700C0EB8>\n\n    @allure.severity(\"critical\")  # 为allure报告修改case优先级\n    @allure.description(\"京东小程序入口注册接口\")  # 为allure报告添加case描述\n    @pytest.mark.parametrize(\"case\", cases)  # 把返回的列表中的成员赋值给case，每赋值一次执行一次case\n    def test_register(self, case):  # 接受case测试用例对象参数\n        allure.dynamic.title(case.case_title)  # 动态获取allure报告的case标题\n        allure.attach(body=case.url, name='接口路径')  # allure报告显示接口路径\n        allure.attach(body=case.case_data, name='接口参数')  # allure报告显示接口参数\n    \n        uname = eval(case.case_data)[\"username\"]\n        phone = eval(case.case_data)[\"phone\"]\n        # 正确流程\n        if case.case_id == 1:\n            self.db.cud(\"delete from tb_user where name = %s or phone = %s;\", (uname, phone))\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))  # 发起post请求，url和请求体是对像的2个实例属性\n        res = response.json()  # 把响应体转换为jsio格式\n    \n        allure.attach(body=str(res), name='响应结果')  # allure报告显示响应结果\n    \n        try:\n            assert eval(case.expect) == res  # 断言测试用例的预期结果和实际结果是否一致\n            # 数据验证\n            if case.case_id == 1:\n                count = self.db.find_count('select * from tb_user where name = %s;', (uname,))\n                assert count == 1\n        except AssertionError as e:\n            ReadExcel.write_data(DATA_FILE, 'register', case.case_id, 7,\n                                 '失败')  # 如果断言失败把结果写入excel\n            logger.error(\"测试编号{},测试用例标题{},执行失败！实际结果是:{}\".format(case.case_id, case.case_title, res))\n            logger.exception(e)\n            raise e\n        else:\n            ReadExcel.write_data(DATA_FILE, 'register', case.case_id, 7,\n>                                '成功')  # 如果实际结果和预期结果一致就把‘成功’写入excel\n\ntest_register.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\..\\comms\\excel_utils.py:84: in write_data\n    wb.save(file_name)  # 保存\nD:\\Tools\\python\\lib\\site-packages\\openpyxl\\workbook\\workbook.py:407: in save\n    save_workbook(self, filename)\nD:\\Tools\\python\\lib\\site-packages\\openpyxl\\writer\\excel.py:291: in save_workbook\n    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <zipfile.ZipFile [closed]>\nfile = 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx', mode = 'w'\ncompression = 8, allowZip64 = True, compresslevel = None\n\n    def __init__(self, file, mode=\"r\", compression=ZIP_STORED, allowZip64=True,\n                 compresslevel=None):\n        \"\"\"Open the ZIP file with mode read 'r', write 'w', exclusive create 'x',\n        or append 'a'.\"\"\"\n        if mode not in ('r', 'w', 'x', 'a'):\n            raise ValueError(\"ZipFile requires mode 'r', 'w', 'x', or 'a'\")\n    \n        _check_compression(compression)\n    \n        self._allowZip64 = allowZip64\n        self._didModify = False\n        self.debug = 0  # Level of printing: 0 through 3\n        self.NameToInfo = {}    # Find file info given name\n        self.filelist = []      # List of ZipInfo instances for archive\n        self.compression = compression  # Method of compression\n        self.compresslevel = compresslevel\n        self.mode = mode\n        self.pwd = None\n        self._comment = b''\n    \n        # Check if we were passed a file-like object\n        if isinstance(file, os.PathLike):\n            file = os.fspath(file)\n        if isinstance(file, str):\n            # No, it's a filename\n            self._filePassed = 0\n            self.filename = file\n            modeDict = {'r' : 'rb', 'w': 'w+b', 'x': 'x+b', 'a' : 'r+b',\n                        'r+b': 'w+b', 'w+b': 'wb', 'x+b': 'xb'}\n            filemode = modeDict[mode]\n            while True:\n                try:\n>                   self.fp = io.open(file, filemode)\nE                   PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'\n\nD:\\Tools\\python\\lib\\zipfile.py:1182: PermissionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "connect_db",
+    "time" : {
+      "start" : 1646199159093,
+      "stop" : 1646199159101,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "京东小程序入口注册接口",
+    "status" : "broken",
+    "statusMessage" : "PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'",
+    "statusTrace" : "self = <autotest.testcases.test_my_interface01.test_register.TestRegister object at 0x000002D670097908>\ncase = <comms.excel_utils.CaseData object at 0x000002D6700C0EB8>\n\n    @allure.severity(\"critical\")  # 为allure报告修改case优先级\n    @allure.description(\"京东小程序入口注册接口\")  # 为allure报告添加case描述\n    @pytest.mark.parametrize(\"case\", cases)  # 把返回的列表中的成员赋值给case，每赋值一次执行一次case\n    def test_register(self, case):  # 接受case测试用例对象参数\n        allure.dynamic.title(case.case_title)  # 动态获取allure报告的case标题\n        allure.attach(body=case.url, name='接口路径')  # allure报告显示接口路径\n        allure.attach(body=case.case_data, name='接口参数')  # allure报告显示接口参数\n    \n        uname = eval(case.case_data)[\"username\"]\n        phone = eval(case.case_data)[\"phone\"]\n        # 正确流程\n        if case.case_id == 1:\n            self.db.cud(\"delete from tb_user where name = %s or phone = %s;\", (uname, phone))\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))  # 发起post请求，url和请求体是对像的2个实例属性\n        res = response.json()  # 把响应体转换为jsio格式\n    \n        allure.attach(body=str(res), name='响应结果')  # allure报告显示响应结果\n    \n        try:\n            assert eval(case.expect) == res  # 断言测试用例的预期结果和实际结果是否一致\n            # 数据验证\n            if case.case_id == 1:\n                count = self.db.find_count('select * from tb_user where name = %s;', (uname,))\n                assert count == 1\n        except AssertionError as e:\n            ReadExcel.write_data(DATA_FILE, 'register', case.case_id, 7,\n                                 '失败')  # 如果断言失败把结果写入excel\n            logger.error(\"测试编号{},测试用例标题{},执行失败！实际结果是:{}\".format(case.case_id, case.case_title, res))\n            logger.exception(e)\n            raise e\n        else:\n            ReadExcel.write_data(DATA_FILE, 'register', case.case_id, 7,\n>                                '成功')  # 如果实际结果和预期结果一致就把‘成功’写入excel\n\ntest_register.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\..\\comms\\excel_utils.py:84: in write_data\n    wb.save(file_name)  # 保存\nD:\\Tools\\python\\lib\\site-packages\\openpyxl\\workbook\\workbook.py:407: in save\n    save_workbook(self, filename)\nD:\\Tools\\python\\lib\\site-packages\\openpyxl\\writer\\excel.py:291: in save_workbook\n    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <zipfile.ZipFile [closed]>\nfile = 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx', mode = 'w'\ncompression = 8, allowZip64 = True, compresslevel = None\n\n    def __init__(self, file, mode=\"r\", compression=ZIP_STORED, allowZip64=True,\n                 compresslevel=None):\n        \"\"\"Open the ZIP file with mode read 'r', write 'w', exclusive create 'x',\n        or append 'a'.\"\"\"\n        if mode not in ('r', 'w', 'x', 'a'):\n            raise ValueError(\"ZipFile requires mode 'r', 'w', 'x', or 'a'\")\n    \n        _check_compression(compression)\n    \n        self._allowZip64 = allowZip64\n        self._didModify = False\n        self.debug = 0  # Level of printing: 0 through 3\n        self.NameToInfo = {}    # Find file info given name\n        self.filelist = []      # List of ZipInfo instances for archive\n        self.compression = compression  # Method of compression\n        self.compresslevel = compresslevel\n        self.mode = mode\n        self.pwd = None\n        self._comment = b''\n    \n        # Check if we were passed a file-like object\n        if isinstance(file, os.PathLike):\n            file = os.fspath(file)\n        if isinstance(file, str):\n            # No, it's a filename\n            self._filePassed = 0\n            self.filename = file\n            modeDict = {'r' : 'rb', 'w': 'w+b', 'x': 'x+b', 'a' : 'r+b',\n                        'r+b': 'w+b', 'w+b': 'wb', 'x+b': 'xb'}\n            filemode = modeDict[mode]\n            while True:\n                try:\n>                   self.fp = io.open(file, filemode)\nE                   PermissionError: [Errno 13] Permission denied: 'D:\\\\PythonWorkSpace\\\\autotest\\\\datas\\\\cases.xlsx'\n\nD:\\Tools\\python\\lib\\zipfile.py:1182: PermissionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8d7628cc2c462f9a",
+      "name" : "接口路径",
+      "source" : "8d7628cc2c462f9a.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "17d2e41a3cc5eeb7",
+      "name" : "接口参数",
+      "source" : "17d2e41a3cc5eeb7.attach",
+      "type" : "text/plain",
+      "size" : 104
+    }, {
+      "uid" : "b7180628b7e68868",
+      "name" : "响应结果",
+      "source" : "b7180628b7e68868.attach",
+      "type" : "text/plain",
+      "size" : 46
+    }, {
+      "uid" : "d221926919ba089c",
+      "name" : "log",
+      "source" : "d221926919ba089c.txt",
+      "type" : "text/plain",
+      "size" : 211
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "connect_db::0",
+    "time" : {
+      "start" : 1646199159211,
+      "stop" : 1646199159211,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "注册模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-364LE5K"
+  }, {
+    "name" : "thread",
+    "value" : "10224-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x000002D6700C0EB8>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9b4a583f20974e42.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x000002D6700C0EB8>" ]
+}
